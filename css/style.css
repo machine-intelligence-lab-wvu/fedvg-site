@@ -1,0 +1,109 @@
+/* General */
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* Container */
+  .container {
+    max-width: 900px;
+    margin: auto;
+    padding: 40px 20px;
+  }
+  
+  /* Hero / Title */
+  .hero {
+    text-align: center;
+    padding: 80px 20px 40px;
+    background: linear-gradient(to right, #0d6efd, #6610f2);
+    color: white;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+  }
+  
+  .hero h1 {
+    font-size: 2.4em;
+    margin-bottom: 0.2em;
+  }
+  
+  .hero .authors {
+    font-size: 1em;
+    color: #e2e2e2;
+  }
+  
+  /* Section titles */
+  section h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  /* Abstract */
+  .abstract p {
+    font-size: 1.05em;
+    text-align: justify;
+  }
+  
+  /* Video */
+  .video .video-wrapper {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  /* Gallery */
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+  }
+  
+  .gallery-item {
+    flex: 1 1 calc(33% - 16px);
+    max-width: 300px;
+  }
+  
+  .gallery-item img {
+    width: 100%;
+    border-radius: 8px;
+    transition: transform 0.3s;
+  }
+  
+  .gallery-item img:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Buttons */
+  .button {
+    display: inline-block;
+    margin: 8px 6px;
+    padding: 12px 20px;
+    background: #007bff;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 6px;
+    transition: background 0.3s, transform 0.2s;
+  }
+  
+  .button:hover {
+    background: #0056b3;
+    transform: translateY(-2px);
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .gallery-item {
+      flex: 1 1 calc(50% - 16px);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .gallery-item {
+      flex: 1 1 100%;
+    }
+  }
